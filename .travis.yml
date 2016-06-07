@@ -1,6 +1,6 @@
 language: python
 python:
-  - "2.6"
+  - "2.7"
 script:
   - wget http://static.monkop.com/setup/cli/monkop-cli.py
   - wget http://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=81479
