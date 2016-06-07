@@ -3,5 +3,5 @@ python:
   - "2.6"
 script:
   - wget http://static.monkop.com/setup/cli/monkop-cli.py
-  - wget http://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=81479 -O apkFile.apk
-  - python monkop-cli.py -k 8b5f6d8a-3ab1-4463-868d-bd9030b85f1d -t 2 -a apkFile.apk
+  - wget http://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=81479
+  - python monkop-cli.py -k 8b5f6d8a-3ab1-4463-868d-bd9030b85f1d -t 2 -a "com.tinyco.avengers_1.0.40-215_minAPI15(armeabi)(nodpi).apk"
