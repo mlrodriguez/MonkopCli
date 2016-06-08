@@ -8,6 +8,7 @@ script:
   - curl -V
   - python -c "import platform; print platform.platform()"
   - printenv
-  - set
   - env
+  - curl "https://api.github.com/repos/$TRAVIS_REPO_SLUG/statuses/$TRAVIS_COMMIT?access_token=6165f32f01e470f327575731c4d5af2dd644e0a9" \ -H "Content-Type: application/json" \ -X POST \ -d "{\"state\": \"pending\", \"description\": \"Monkop\", \"target_url\": \"http://console.monkop.com\"}"
   - python monkop-cli.py -k 8b5f6d8a-3ab1-4463-868d-bd9030b85f1d -w -t 2 -a apkFile.apk
+  - curl "https://api.github.com/repos/$TRAVIS_REPO_SLUG/statuses/$TRAVIS_COMMIT?access_token=6165f32f01e470f327575731c4d5af2dd644e0a9" \ -H "Content-Type: application/json" \ -X POST \ -d "{\"state\": \"success\", \"description\": \"Monkop\", \"target_url\": \"http://console.monkop.com\"}"
