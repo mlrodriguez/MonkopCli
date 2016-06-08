@@ -7,4 +7,7 @@ script:
   - python -c "import sys; print sys.version"
   - curl -V
   - python -c "import platform; print platform.platform()"
+  - printenv
+  - set
+  - env
   - python monkop-cli.py -k 8b5f6d8a-3ab1-4463-868d-bd9030b85f1d -w -t 2 -a apkFile.apk
