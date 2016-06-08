@@ -1,0 +1,1 @@
+curl "https://api.github.com/repos/$TRAVIS_REPO_SLUG/statuses/$TRAVIS_COMMIT?access_token=6165f32f01e470f327575731c4d5af2dd644e0a9" -H "Content-Type: application/json" -X POST -d "{'state': 'pending', 'description': 'Monkop', 'target_url': 'http://console.monkop.com'}"
